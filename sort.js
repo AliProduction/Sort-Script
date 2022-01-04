@@ -3,10 +3,10 @@ let path = require("path");
 let currentPath = "C:/Users/fatos/Downloads/"; 
 
 fs.readdir(currentPath, (err, files) => {
-   files.forEach(processFile);
+   files.forEach(process);
 });
 
-function processFile(file) {
+function process(file) {
    let endung = path.extname(file);
    console.log(file + " Endung: " + endung);
 
