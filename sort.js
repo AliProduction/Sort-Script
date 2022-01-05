@@ -10,7 +10,7 @@ function process(file) {
    let endung = path.extname(file);
    console.log(file + " Endung: " + endung);
 
-   if (file == "sort" || endung == ".js") {
+   if (file == "sort" && endung == ".js") {
       console.log("( sort.js ) File wurde ignoriert !");
    } else {
       fs.mkdir(currentPath + endung, () => {
